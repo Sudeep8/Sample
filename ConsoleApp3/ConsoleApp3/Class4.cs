@@ -4,21 +4,24 @@ using System.Text;
 
 namespace ConsoleApp3
 {
-    
-    class Class3
+    class Class4
     {
         static void Main(string[] args)
         {
             int Number;
             Console.WriteLine("Enter the age of person: ");
             Number = Convert.ToInt32(Console.ReadLine());
-            if (Number > 18)
+            if (Number > 60)
             {
-                Console.WriteLine("Person is able to vote");
+                Console.WriteLine("you are a senior citizen");
             }
-            else
+            else if (Number < 18)
             {
-                Console.WriteLine("Person is not able to vote");
+                Console.WriteLine("you are not eligible for voting");
+            }
+            else if (Number >= 18) 
+            {
+                Console.WriteLine("eligible for voting");
             }
             Console.ReadLine();
         }
